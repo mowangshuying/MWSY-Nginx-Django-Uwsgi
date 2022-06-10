@@ -1,0 +1,473 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Sun May 29 10:10:32 2022] ***
+compiled with version: 7.5.0 on 27 May 2022 16:42:27
+os: Linux-5.4.0-113-generic #127~18.04.1-Ubuntu SMP Wed May 18 15:40:23 UTC 2022
+nodename: ubuntu-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/ubuntu/work-space/django-test/bookmanager
+writing pidfile to /home/ubuntu/work-space/django-test/bookmanager/pid/uwsgi-8000.pd
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+chdir() to /home/ubuntu/work-space/django-test/bookmanager
+your processes number limit is 7615
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:9000 fd 6
+uwsgi socket 0 bound to TCP address :8000 fd 9
+Python version: 3.6.9 (default, Mar 15 2022, 13:55:28)  [GCC 8.4.0]
+Python main interpreter initialized at 0x563195666720
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+['.', '', '/usr/lib/python36.zip', '/usr/lib/python3.6', '/usr/lib/python3.6/lib-dynload', '/home/ubuntu/.local/lib/python3.6/site-packages', '/usr/local/lib/python3.6/dist-packages', '/usr/lib/python3/dist-packages', '/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages']
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x563195666720 pid: 5225 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5225)
+spawned uWSGI worker 1 (pid: 5227, cores: 2)
+spawned uWSGI worker 2 (pid: 5228, cores: 2)
+spawned uWSGI worker 3 (pid: 5230, cores: 2)
+spawned uWSGI worker 4 (pid: 5232, cores: 2)
+spawned uWSGI http 1 (pid: 5233)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5232|app: 0|req: 1/1] 192.168.95.1 () {32 vars in 687 bytes} [Sun May 29 02:40:09 2022] GET / => generated 55910 bytes in 190 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5232|app: 0|req: 2/2] 192.168.95.1 () {32 vars in 646 bytes} [Sun May 29 02:40:10 2022] GET /favicon.ico => generated 55979 bytes in 190 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5230|app: 0|req: 1/3] 192.168.95.1 () {34 vars in 721 bytes} [Sun May 29 02:40:24 2022] GET /admin => generated 56098 bytes in 47 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5230|app: 0|req: 2/4] 192.168.95.1 () {32 vars in 651 bytes} [Sun May 29 02:40:24 2022] GET /favicon.ico => generated 55984 bytes in 40 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5232|app: 0|req: 3/5] 192.168.95.1 () {32 vars in 687 bytes} [Sun May 29 02:40:36 2022] GET / => generated 55910 bytes in 21 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5227|app: 0|req: 1/6] 192.168.95.1 () {32 vars in 646 bytes} [Sun May 29 02:40:36 2022] GET /favicon.ico => generated 55979 bytes in 49 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5228|app: 0|req: 1/7] 192.168.95.1 () {32 vars in 687 bytes} [Sun May 29 02:42:23 2022] GET / => generated 55910 bytes in 45 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5230|app: 0|req: 3/8] 192.168.95.1 () {32 vars in 646 bytes} [Sun May 29 02:42:23 2022] GET /favicon.ico => generated 55979 bytes in 21 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5230|app: 0|req: 4/9] 192.168.95.1 () {34 vars in 718 bytes} [Sun May 29 02:42:33 2022] GET / => generated 56045 bytes in 20 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5228|app: 0|req: 2/10] 192.168.95.1 () {32 vars in 646 bytes} [Sun May 29 02:42:33 2022] GET /favicon.ico => generated 55979 bytes in 38 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5227|app: 0|req: 2/11] 192.168.95.1 () {34 vars in 718 bytes} [Sun May 29 02:42:34 2022] GET / => generated 56045 bytes in 46 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5232|app: 0|req: 4/12] 192.168.95.1 () {32 vars in 646 bytes} [Sun May 29 02:42:34 2022] GET /favicon.ico => generated 55979 bytes in 21 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5230|app: 0|req: 5/13] 192.168.95.1 () {34 vars in 718 bytes} [Sun May 29 02:42:34 2022] GET / => generated 56045 bytes in 21 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5230|app: 0|req: 6/14] 192.168.95.1 () {32 vars in 646 bytes} [Sun May 29 02:42:34 2022] GET /favicon.ico => generated 55979 bytes in 21 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5230|app: 0|req: 7/15] 192.168.95.1 () {34 vars in 718 bytes} [Sun May 29 02:42:34 2022] GET / => generated 56045 bytes in 23 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5227|app: 0|req: 3/16] 192.168.95.1 () {32 vars in 646 bytes} [Sun May 29 02:42:34 2022] GET /favicon.ico => generated 55979 bytes in 20 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5227|app: 0|req: 4/17] 192.168.95.1 () {34 vars in 718 bytes} [Sun May 29 02:42:34 2022] GET / => generated 56045 bytes in 20 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5232|app: 0|req: 5/18] 192.168.95.1 () {32 vars in 646 bytes} [Sun May 29 02:42:34 2022] GET /favicon.ico => generated 55979 bytes in 20 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5228|app: 0|req: 3/19] 192.168.95.1 () {34 vars in 718 bytes} [Sun May 29 02:42:34 2022] GET / => generated 56045 bytes in 20 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5228|app: 0|req: 4/20] 192.168.95.1 () {32 vars in 646 bytes} [Sun May 29 02:42:34 2022] GET /favicon.ico => generated 55979 bytes in 20 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5230|app: 0|req: 8/21] 192.168.95.1 () {34 vars in 718 bytes} [Sun May 29 02:42:35 2022] GET / => generated 56045 bytes in 22 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5227|app: 0|req: 5/22] 192.168.95.1 () {32 vars in 646 bytes} [Sun May 29 02:42:35 2022] GET /favicon.ico => generated 55979 bytes in 21 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '192.168.95.132:8000'. You may need to add '192.168.95.132' to ALLOWED_HOSTS.
+[pid: 5232|app: 0|req: 6/23] 192.168.95.1 () {34 vars in 718 bytes} [Sun May 29 02:42:35 2022] GET / => generated 56045 bytes in 21 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.20 (64bit) on [Sun May 29 10:43:17 2022] ***
+compiled with version: 7.5.0 on 27 May 2022 16:42:27
+os: Linux-5.4.0-113-generic #127~18.04.1-Ubuntu SMP Wed May 18 15:40:23 UTC 2022
+nodename: ubuntu-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/ubuntu/work-space/django-test/bookmanager
+writing pidfile to /home/ubuntu/work-space/django-test/bookmanager/pid/uwsgi-8000.pd
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+chdir() to /home/ubuntu/work-space/django-test/bookmanager
+your processes number limit is 7615
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:9000 fd 6
+uwsgi socket 0 bound to TCP address :8000 fd 9
+Python version: 3.6.9 (default, Mar 15 2022, 13:55:28)  [GCC 8.4.0]
+Python main interpreter initialized at 0x55c9026ea720
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+['.', '', '/usr/lib/python36.zip', '/usr/lib/python3.6', '/usr/lib/python3.6/lib-dynload', '/home/ubuntu/.local/lib/python3.6/site-packages', '/usr/local/lib/python3.6/dist-packages', '/usr/lib/python3/dist-packages', '/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages']
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55c9026ea720 pid: 7246 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7246)
+spawned uWSGI worker 1 (pid: 7248, cores: 2)
+spawned uWSGI worker 2 (pid: 7250, cores: 2)
+spawned uWSGI worker 3 (pid: 7251, cores: 2)
+spawned uWSGI worker 4 (pid: 7253, cores: 2)
+spawned uWSGI http 1 (pid: 7255)
+[pid: 7251|app: 0|req: 1/1] 192.168.95.1 () {34 vars in 718 bytes} [Sun May 29 02:43:31 2022] GET / => generated 1716 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 7248|app: 0|req: 1/2] 192.168.95.1 () {32 vars in 646 bytes} [Sun May 29 02:43:31 2022] GET /favicon.ico => generated 1972 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 7250|app: 0|req: 1/3] 192.168.95.1 () {34 vars in 711 bytes} [Sun May 29 02:44:01 2022] GET / => generated 1716 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 7250|app: 0|req: 2/4] 192.168.95.1 () {32 vars in 687 bytes} [Sun May 29 02:45:45 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 7250|app: 0|req: 3/5] 192.168.95.1 () {34 vars in 721 bytes} [Sun May 29 02:45:51 2022] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 7251|app: 0|req: 2/6] 192.168.95.1 () {34 vars in 723 bytes} [Sun May 29 02:45:51 2022] GET /admin/ => generated 0 bytes in 12 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 7251|app: 0|req: 3/7] 192.168.95.1 () {34 vars in 760 bytes} [Sun May 29 02:45:51 2022] GET /admin/login/?next=/admin/ => generated 1650 bytes in 49 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/base.css
+[pid: 7248|app: 0|req: 2/8] 192.168.95.1 () {36 vars in 809 bytes} [Sun May 29 02:45:51 2022] GET /static/admin/css/login.css => generated 2017 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 7251|app: 0|req: 4/9] 192.168.95.1 () {36 vars in 807 bytes} [Sun May 29 02:45:51 2022] GET /static/admin/css/base.css => generated 2014 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 7248|app: 0|req: 3/10] 192.168.95.1 () {34 vars in 788 bytes} [Sun May 29 02:45:51 2022] GET /admin/ => generated 0 bytes in 9 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 1)
+[pid: 7250|app: 0|req: 4/11] 192.168.95.1 () {34 vars in 825 bytes} [Sun May 29 02:45:51 2022] GET /admin/login/?next=/admin/ => generated 1650 bytes in 51 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+[pid: 7250|app: 0|req: 5/12] 192.168.95.1 () {36 vars in 800 bytes} [Sun May 29 02:51:28 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[pid: 7248|app: 0|req: 4/13] 127.0.0.1 () {42 vars in 759 bytes} [Sun May 29 02:56:28 2022] GET / => generated 56756 bytes in 43 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+[pid: 7250|app: 0|req: 6/14] 127.0.0.1 () {40 vars in 702 bytes} [Sun May 29 02:56:28 2022] GET /favicon.ico => generated 56705 bytes in 27 msecs (HTTP/1.1 400) 1 headers in 53 bytes (1 switches on core 0)
+[pid: 7250|app: 0|req: 7/15] 192.168.95.132 () {32 vars in 562 bytes} [Sun May 29 02:56:46 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 7251|app: 0|req: 5/16] 192.168.95.132 () {32 vars in 532 bytes} [Sun May 29 02:56:46 2022] GET /favicon.ico => generated 1972 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.20 (64bit) on [Sun May 29 18:56:40 2022] ***
+compiled with version: 7.5.0 on 27 May 2022 16:42:27
+os: Linux-5.4.0-113-generic #127~18.04.1-Ubuntu SMP Wed May 18 15:40:23 UTC 2022
+nodename: ubuntu-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/ubuntu/work-space/django-test/bookmanager
+writing pidfile to /home/ubuntu/work-space/django-test/bookmanager/pid/uwsgi-8000.pd
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+chdir() to /home/ubuntu/work-space/django-test/bookmanager
+your processes number limit is 7615
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:9000 fd 6
+uwsgi socket 0 bound to TCP address :8000 fd 9
+Python version: 3.6.9 (default, Mar 15 2022, 13:55:28)  [GCC 8.4.0]
+Python main interpreter initialized at 0x556529555210
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+['.', '', '/usr/lib/python36.zip', '/usr/lib/python3.6', '/usr/lib/python3.6/lib-dynload', '/home/ubuntu/.local/lib/python3.6/site-packages', '/usr/local/lib/python3.6/dist-packages', '/usr/lib/python3/dist-packages', '/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages']
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x556529555210 pid: 5507 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5507)
+spawned uWSGI worker 1 (pid: 5509, cores: 2)
+spawned uWSGI worker 2 (pid: 5510, cores: 2)
+spawned uWSGI worker 3 (pid: 5512, cores: 2)
+spawned uWSGI worker 4 (pid: 5514, cores: 2)
+spawned uWSGI http 1 (pid: 5517)
+[pid: 5514|app: 0|req: 1/1] 192.168.95.1 () {34 vars in 776 bytes} [Sun May 29 10:56:59 2022] GET / => generated 1716 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 5514|app: 0|req: 2/2] 192.168.95.1 () {34 vars in 735 bytes} [Sun May 29 10:56:59 2022] GET /favicon.ico => generated 1972 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 5510|app: 0|req: 1/3] 192.168.95.1 () {36 vars in 807 bytes} [Sun May 29 10:57:01 2022] GET / => generated 1716 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+gateway "uWSGI http 1" has been buried (pid: 5517)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/work-space/django-test/bookmanager
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 9 mapped to socket 0 (:8000)
+running /home/ubuntu/.local/bin/uwsgi
+[uWSGI] getting INI configuration from bookmanager.ini
+*** Starting uWSGI 2.0.20 (64bit) on [Sun May 29 11:11:53 2022] ***
+compiled with version: 7.5.0 on 27 May 2022 16:42:27
+os: Linux-5.4.0-113-generic #127~18.04.1-Ubuntu SMP Wed May 18 15:40:23 UTC 2022
+nodename: ubuntu-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/ubuntu/work-space/django-test/bookmanager
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+chdir() to /home/ubuntu/work-space/django-test/bookmanager
+your processes number limit is 7615
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :9000 fd 7
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+Python version: 3.6.9 (default, Mar 15 2022, 13:55:28)  [GCC 8.4.0]
+Python main interpreter initialized at 0x5558a702d030
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+['.', '', '/usr/lib/python36.zip', '/usr/lib/python3.6', '/usr/lib/python3.6/lib-dynload', '/home/ubuntu/.local/lib/python3.6/site-packages', '/usr/local/lib/python3.6/dist-packages', '/usr/lib/python3/dist-packages', '/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages']
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5558a702d030 pid: 5507 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 5507)
+spawned uWSGI worker 1 (pid: 6269, cores: 2)
+spawned uWSGI worker 2 (pid: 6271, cores: 2)
+spawned uWSGI worker 3 (pid: 6272, cores: 2)
+spawned uWSGI worker 4 (pid: 6274, cores: 2)
+spawned uWSGI http 1 (pid: 6276)
+*** Starting uWSGI 2.0.20 (64bit) on [Sun May 29 19:12:47 2022] ***
+compiled with version: 7.5.0 on 27 May 2022 16:42:27
+os: Linux-5.4.0-113-generic #127~18.04.1-Ubuntu SMP Wed May 18 15:40:23 UTC 2022
+nodename: ubuntu-virtual-machine
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /home/ubuntu/work-space/django-test/bookmanager
+writing pidfile to /home/ubuntu/work-space/django-test/bookmanager/pid/uwsgi-8000.pd
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+chdir() to /home/ubuntu/work-space/django-test/bookmanager
+your processes number limit is 7615
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :9000 fd 6
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 9
+Python version: 3.6.9 (default, Mar 15 2022, 13:55:28)  [GCC 8.4.0]
+Python main interpreter initialized at 0x5575d9748660
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+['.', '', '/usr/lib/python36.zip', '/usr/lib/python3.6', '/usr/lib/python3.6/lib-dynload', '/home/ubuntu/.local/lib/python3.6/site-packages', '/usr/local/lib/python3.6/dist-packages', '/usr/lib/python3/dist-packages', '/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages']
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5575d9748660 pid: 6387 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6387)
+spawned uWSGI worker 1 (pid: 6389, cores: 2)
+spawned uWSGI worker 2 (pid: 6390, cores: 2)
+spawned uWSGI worker 3 (pid: 6392, cores: 2)
+spawned uWSGI worker 4 (pid: 6393, cores: 2)
+spawned uWSGI http 1 (pid: 6395)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6392|app: 0|req: 1/1]  () {16 vars in 582 bytes} [Sun May 29 11:13:06 2022]   => generated 0 bytes in 70 msecs ( 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6393|app: 0|req: 1/2]  () {16 vars in 517 bytes} [Sun May 29 11:13:06 2022]   => generated 0 bytes in 52 msecs ( 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6389|app: 0|req: 1/3]  () {18 vars in 613 bytes} [Sun May 29 11:13:08 2022]   => generated 0 bytes in 56 msecs ( 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6393|app: 0|req: 2/4]  () {16 vars in 517 bytes} [Sun May 29 11:13:08 2022]   => generated 0 bytes in 1 msecs ( 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6389|app: 0|req: 2/5]  () {18 vars in 613 bytes} [Sun May 29 11:13:09 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6393|app: 0|req: 3/6]  () {16 vars in 517 bytes} [Sun May 29 11:13:09 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6392|app: 0|req: 2/7]  () {18 vars in 613 bytes} [Sun May 29 11:13:35 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6390|app: 0|req: 1/8]  () {16 vars in 517 bytes} [Sun May 29 11:13:35 2022]   => generated 0 bytes in 53 msecs ( 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6393|app: 0|req: 4/9]  () {18 vars in 613 bytes} [Sun May 29 11:13:36 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6393|app: 0|req: 5/10]  () {16 vars in 517 bytes} [Sun May 29 11:13:36 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6393|app: 0|req: 6/11]  () {18 vars in 613 bytes} [Sun May 29 11:13:36 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6393|app: 0|req: 7/12]  () {16 vars in 517 bytes} [Sun May 29 11:13:36 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6393|app: 0|req: 8/13]  () {18 vars in 613 bytes} [Sun May 29 11:13:37 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6390|app: 0|req: 2/14]  () {16 vars in 517 bytes} [Sun May 29 11:13:37 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6392|app: 0|req: 3/15]  () {18 vars in 613 bytes} [Sun May 29 11:13:37 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6392|app: 0|req: 4/16]  () {16 vars in 517 bytes} [Sun May 29 11:13:37 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6392|app: 0|req: 5/17]  () {18 vars in 613 bytes} [Sun May 29 11:13:37 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6392|app: 0|req: 6/18]  () {16 vars in 517 bytes} [Sun May 29 11:13:37 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6392|app: 0|req: 7/19]  () {16 vars in 582 bytes} [Sun May 29 11:14:09 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 156, in __call__
+    request = self.request_class(environ)
+  File "/home/ubuntu/.virtualenvs/py3_django/lib/python3.6/site-packages/django/core/handlers/wsgi.py", line 97, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 6392|app: 0|req: 8/20]  () {16 vars in 522 bytes} [Sun May 29 11:14:09 2022]   => generated 0 bytes in 0 msecs ( 500) 0 headers in 0 bytes (0 switches on core 1)
+[pid: 6393|app: 0|req: 9/21] 192.168.95.1 () {44 vars in 890 bytes} [Sun May 29 11:19:37 2022] GET /admin => generated 0 bytes in 3 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 6390|app: 0|req: 3/22] 192.168.95.1 () {44 vars in 892 bytes} [Sun May 29 11:19:37 2022] GET /admin/ => generated 0 bytes in 13 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 1)
+[pid: 6392|app: 0|req: 9/23] 192.168.95.1 () {44 vars in 929 bytes} [Sun May 29 11:19:37 2022] GET /admin/login/?next=/admin/ => generated 1650 bytes in 45 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+Not Found: /static/admin/css/base.css
+[pid: 6392|app: 0|req: 10/24] 192.168.95.1 () {42 vars in 824 bytes} [Sun May 29 11:19:37 2022] GET /static/admin/css/base.css => generated 2012 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/css/login.css
+[pid: 6389|app: 0|req: 3/25] 192.168.95.1 () {42 vars in 826 bytes} [Sun May 29 11:19:37 2022] GET /static/admin/css/login.css => generated 2015 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 6389|app: 0|req: 4/26] 192.168.95.1 () {42 vars in 831 bytes} [Sun May 29 11:19:37 2022] GET /favicon.ico => generated 1970 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 6392|app: 0|req: 11/27] 192.168.95.1 () {44 vars in 929 bytes} [Sun May 29 11:19:38 2022] GET /admin/login/?next=/admin/ => generated 1650 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+Not Found: /static/admin/css/base.css
+[pid: 6392|app: 0|req: 12/28] 192.168.95.1 () {42 vars in 824 bytes} [Sun May 29 11:19:38 2022] GET /static/admin/css/base.css => generated 2012 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /static/admin/css/login.css
+[pid: 6390|app: 0|req: 4/29] 192.168.95.1 () {42 vars in 826 bytes} [Sun May 29 11:19:38 2022] GET /static/admin/css/login.css => generated 2015 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 6389|app: 0|req: 5/30] 192.168.95.1 () {44 vars in 929 bytes} [Sun May 29 11:19:38 2022] GET /admin/login/?next=/admin/ => generated 1650 bytes in 25 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+Not Found: /static/admin/css/base.css
+[pid: 6392|app: 0|req: 13/31] 192.168.95.1 () {42 vars in 824 bytes} [Sun May 29 11:19:38 2022] GET /static/admin/css/base.css => generated 2012 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/css/login.css
+[pid: 6393|app: 0|req: 10/32] 192.168.95.1 () {42 vars in 826 bytes} [Sun May 29 11:19:38 2022] GET /static/admin/css/login.css => generated 2015 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 6393|app: 0|req: 11/33] 192.168.95.1 () {44 vars in 929 bytes} [Sun May 29 11:19:39 2022] GET /admin/login/?next=/admin/ => generated 1650 bytes in 26 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/base.css
+[pid: 6393|app: 0|req: 12/34] 192.168.95.1 () {42 vars in 824 bytes} [Sun May 29 11:19:39 2022] GET /static/admin/css/base.css => generated 2012 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 6392|app: 0|req: 14/35] 192.168.95.1 () {42 vars in 826 bytes} [Sun May 29 11:19:39 2022] GET /static/admin/css/login.css => generated 2015 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 6392|app: 0|req: 15/36] 192.168.95.1 () {42 vars in 849 bytes} [Sun May 29 11:19:51 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6392|app: 0|req: 16/37] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:18 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6389|app: 0|req: 6/38] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:18 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6392|app: 0|req: 17/39] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:18 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6393|app: 0|req: 13/40] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:18 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6389|app: 0|req: 7/41] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:18 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6393|app: 0|req: 14/42] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:18 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6389|app: 0|req: 8/43] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:18 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6392|app: 0|req: 18/44] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:19 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6392|app: 0|req: 19/45] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:19 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6390|app: 0|req: 5/46] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:19 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6392|app: 0|req: 20/47] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:19 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6390|app: 0|req: 6/48] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:19 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6390|app: 0|req: 7/49] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:26 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6390|app: 0|req: 8/50] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:27 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6390|app: 0|req: 9/51] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:27 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6389|app: 0|req: 9/52] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:27 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6392|app: 0|req: 21/53] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:27 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6389|app: 0|req: 10/54] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:27 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6389|app: 0|req: 11/55] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:27 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6389|app: 0|req: 12/56] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:27 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6390|app: 0|req: 10/57] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:28 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6392|app: 0|req: 22/58] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:28 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6392|app: 0|req: 23/59] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:28 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6389|app: 0|req: 13/60] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:28 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6389|app: 0|req: 14/61] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:31 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6390|app: 0|req: 11/62] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:31 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6393|app: 0|req: 15/63] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:32 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6393|app: 0|req: 16/64] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:32 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6393|app: 0|req: 17/65] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:32 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6389|app: 0|req: 15/66] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:32 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6389|app: 0|req: 16/67] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:32 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6392|app: 0|req: 24/68] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:32 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6392|app: 0|req: 25/69] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:32 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6389|app: 0|req: 17/70] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:33 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6389|app: 0|req: 18/71] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:33 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6389|app: 0|req: 19/72] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:33 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 6389|app: 0|req: 20/73] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:33 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6389|app: 0|req: 21/74] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:33 2022] GET / => generated 1716 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 6390|app: 0|req: 12/75] 192.168.95.1 () {44 vars in 880 bytes} [Sun May 29 11:21:33 2022] GET / => generated 1716 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
